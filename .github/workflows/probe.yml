@@ -1,0 +1,8 @@
+name: probe
+on: [push, workflow_dispatch]
+jobs:
+  r:
+    runs-on: windows-latest
+    steps:
+      - run: echo "windows alive"; $PSVersionTable.PSVersion
+        shell: powershell
